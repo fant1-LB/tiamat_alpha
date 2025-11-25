@@ -1,0 +1,15 @@
+{% extends "pages/head_foot.html" %}
+{% block body %}
+<body>
+    
+<div> Vous travaillez actuellement dans le projet {{project_name}}. </div> 
+<div>Les images {{files2}} ont bien été ajoutée au projet.</div>
+<div>Vous pouvez ajouter plus d'images ci-dessous :</div>
+{% include "partials/upload.html" %}
+
+<div>Ensuite, pour lancer label studio et le workflow, cliquez ici : <a href="/label_lancement">ICI</a></div>
+<p> Dans votre projet, rentrez comme stockage d'origine : <b> {{chemin_images}}</b>  et comme chemin de sortie <b> {{chemin_labels}}</b></p>
+<div>Une fois Labelstudio lancé, quand vos annotations seront terminées, cliquez <a href="/dataset_statistics">ICI</a> pour passer à la suite.</div>
+
+</body>
+{% endblock %}

@@ -1,0 +1,12 @@
+
+
+{% extends "pages/head_foot.html" %}
+{% block body %}
+<body>
+    <p>On arrive à la fin... le fichier est disponible à {{model_path}}</p>
+
+<p> Si vous souhaitez tester votre modèle sur un set d'images, uploadez les ci-dessous :</p>
+    {% include "partials/upload2.html" %}
+</body>
+ {% endblock %}
+</html>

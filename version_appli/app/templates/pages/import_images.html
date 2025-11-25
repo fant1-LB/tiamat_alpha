@@ -1,0 +1,15 @@
+
+{% extends "pages/head_foot.html" %}
+{% block body %}
+
+<body>
+    
+
+<div> Vous travaillez actuellement dans le projet {{project_name}}. Uploader les images du projet ci dessous :</div> 
+    {% include "partials/upload.html" %} 
+<div>Ensuite, pour lancer label studio et le workflow, cliquez ici : <a href="/label_lancement">ICI</a></div>
+<div>Une fois Labelstudio lancé, quand vos annotations seront terminées, cliquez <a href="/dataset_statistics">ICI</a> pour passer à la suite.</div>
+<div> Si vous avez déjà entrainé un modèle et que vous voulez le tester ou l'appliquer, cliquez <a href="/choisir_modele">ICI</a>. </div>
+
+</body>
+{% endblock %}
